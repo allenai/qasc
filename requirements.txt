@@ -1,0 +1,1 @@
+git+https://github.com/OyvindTafjord/allennlp.git@60a04a3e2ebb25d2f9d9f8ebfc8d9962fdbf19de#egg=allennlp

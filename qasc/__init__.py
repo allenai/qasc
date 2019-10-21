@@ -1,0 +1,1 @@
+from qasc.predictors.bert_mcq_predictor import MultipleChoiceQAJsonPredictor
