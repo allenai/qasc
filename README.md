@@ -85,7 +85,7 @@ To run the single-step retrieval baseline, we provide the train, dev and test fi
 
 To download the data:
 ```
-wget -o http://data.allenai.org/downloads/qasc/qasc_dataset_1step.tar.gz
+wget http://data.allenai.org/downloads/qasc/qasc_dataset_1step.tar.gz
 tar xvfz qasc_dataset_1step.tar.gz  -C data/
 rm qasc_dataset_1step.tar.gz
 ```
