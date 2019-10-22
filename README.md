@@ -23,28 +23,28 @@ Table of Contents
 ## Downloading Data
 
 ### Dataset
-Download and unzip the dataset in `data/QASC_Dataset` folder:
+Download and unzip the dataset into the `data/QASC_Dataset` folder:
 ```
 mkdir -p data
-wget -o http://data.allenai.org/downloads/qasc/qasc_dataset.tar.gz
+wget http://data.allenai.org/downloads/qasc/qasc_dataset.tar.gz
 tar xvfz qasc_dataset.tar.gz  -C data/
 rm qasc_dataset.tar.gz
 ```
 ### Corpus
-Download and unzip the text corpus (17M sentences) in `data/QASC_Corpus` folder:
+Download and unzip the text corpus (17M sentences) into the `data/QASC_Corpus` folder:
 ```
 mkdir -p data
-wget -o http://data.allenai.org/downloads/qasc/qasc_corpus.tar.gz
+wget http://data.allenai.org/downloads/qasc/qasc_corpus.tar.gz
 tar xvfz qasc_corpus.tar.gz  -C data/
 rm qasc_corpus.tar.gz
 ```
 
 
 ### Models
-Download and unzip the baseline models in `data/QASC_Models` folder:
+Download and unzip the baseline models into the `data/QASC_Models` folder:
 ```
 mkdir -p data
-wget -o http://data.allenai.org/downloads/qasc/qasc_models.tar.gz
+wget http://data.allenai.org/downloads/qasc/qasc_models.tar.gz
 tar xvfz qasc_models.tar.gz  -C data/
 rm qasc_models.tar.gz
 ```
