@@ -21,7 +21,13 @@ class MultipleChoiceQAJsonPredictor(Predictor):
         question_text = question_data['stem']
         choice_text_list = [choice['text'] for choice in question_data['choices']]
         choice_labels = [choice['label'] for choice in question_data['choices']]
-        instance = dataset_reader.text_to_instance("NA", question_text, choice_text_list)
+        choice_context_list = []
+        context = json_dict.get("para", None)
+        for choice in question_data['choices']:
+            choice_context_list.append(choice.get("para", None))
+        instance = dataset_reader.text_to_instance(qid, question_text, choice_text_list,
+                                                   context=context,
+                                                   choice_context_list=choice_context_list)
         extra_info = {
             'id': json_dict['id'],
             'choice_labels': choice_labels
