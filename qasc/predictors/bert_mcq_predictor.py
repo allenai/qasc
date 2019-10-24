@@ -16,7 +16,7 @@ class MultipleChoiceQAJsonPredictor(Predictor):
     def _my_json_to_instance(self, json_dict: JsonDict) -> Tuple[Instance, JsonDict]:
         # Make a cast here to satisfy mypy
         dataset_reader = cast(BertMCQAReader, self._dataset_reader)
-
+        qid = json_dict['id']
         question_data = json_dict['question']
         question_text = question_data['stem']
         choice_text_list = [choice['text'] for choice in question_data['choices']]
@@ -29,7 +29,7 @@ class MultipleChoiceQAJsonPredictor(Predictor):
                                                    context=context,
                                                    choice_context_list=choice_context_list)
         extra_info = {
-            'id': json_dict['id'],
+            'id': qid,
             'choice_labels': choice_labels
         }
         return instance, extra_info
