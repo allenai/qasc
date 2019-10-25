@@ -1,6 +1,6 @@
 # Question Answering via Sentence Composition (QASC)
 
-<img align="left" src="https://leaderboard.allenai.org/assets/images/leaderboard/qasc/logo.svg"/>
+<img align="left" src="https://leaderboard.allenai.org/assets/images/leaderboard/qasc/logo.svg"></img>
 QASC is a question-answering dataset with a focus on sentence composition. It consists of 9,980 8-way multiple-choice questions about grade school science (8,134 train, 926 dev, 920 test), and comes with a corpus of 17M sentences. This repository shows how to download the QASC dataset and corpus. Note that the test set __does not have the answer key or fact annotations__. To evaluate your model on the test set, please submit your predictions (limited to once/week to prevent over-fitting) to the [QASC leaderboard](https://leaderboard.allenai.org/qasc) in the CSV format described [here](https://leaderboard.allenai.org/qasc/submissions/get-started). We also provide two sample baseline models that can be used to produce the predictions in this CSV format.
 
 
