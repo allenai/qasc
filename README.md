@@ -8,7 +8,8 @@ QASC is a question-answering dataset with a focus on sentence composition. It co
 	* **QASC Dataset**: [http://data.allenai.org/downloads/qasc/qasc_dataset.tar.gz](http://data.allenai.org/downloads/qasc/qasc_dataset.tar.gz)
 	* **QASC Corpus**:  [http://data.allenai.org/downloads/qasc/qasc_corpus.tar.gz](http://data.allenai.org/downloads/qasc/qasc_corpus.tar.gz)
 	* **Leaderboard**:  [https://leaderboard.allenai.org/qasc](https://leaderboard.allenai.org/qasc)
-	* **Arxiv Paper**: [TBD](TBD)
+	* **Paper**: [QASC: A Dataset for Question Answering via Sentence Composition
+](https://arxiv.org/abs/1910.11473)
 
 
 Table of Contents
